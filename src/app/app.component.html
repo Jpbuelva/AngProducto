@@ -4,18 +4,16 @@
       {{title}}
     </h1>
   </header>
-  <nav id="nav" class="col-lg-12">
+  <nav id="nav" class="col-lg-12 nav">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Productos</a></li>
-      <li><a href="#">Crear producto</a></li>
+      <li><a routerLink="home" >Home</a></li>
+      <li><a routerLink="" >Productos</a></li>
+      <li><a routerLink="" >Crear producto</a></li>
     </ul>
   </nav>
   <section id="main" class="col-lg-12">
-    <router-outlet></router-outlet>
-    <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae laboriosam eligendi asperiores totam esse magni fugiat minus aut consectetur quos? 
-      Consectetur officiis quia sequi nihil sapiente exercitationem nemo fuga obcaecati.
-    </h3>
+   <router-outlet></router-outlet> 
+  
   </section>
   <footer class="col-lg-12">
     <p>Curso de angular</p>

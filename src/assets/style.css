@@ -21,3 +21,62 @@
     font-weight: bold;
     font-size: 30px;
 }
+#nav {
+    padding: 0px;
+    margin: 0px;
+    background: #d4131aab ;
+}
+
+#nav ul{
+    margin: 0px;
+    list-style: none;
+}
+#nav ul li{
+    float: left;
+    margin-right: 20px;
+
+}
+#nav ul li a{
+  display: block;
+  color: white;
+  height:30px ;
+  line-height: 29px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition: all 300ms;
+
+}
+#nav ul li a:hover{
+        padding: 0px;
+        /* margin-top: 0px; */
+        text-decoration: none;
+        background: #E03137;
+  
+  }
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: initial;
+    margin-left: 2px;
+}
+#main .jumbotron{
+    padding: 50px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+#footer{
+    margin-top: 50px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+    color: gray;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 8px;
+    margin-left: 2px;
+}
