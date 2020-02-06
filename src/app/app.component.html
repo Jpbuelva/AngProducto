@@ -1,4 +1,4 @@
-<div id="content" class="col-lg-10 offset-lg-1">
+<div id="" class="col-lg-10 offset-lg-1">
   <header id="header" class="col-lg-12">
     <h1>
       {{title}}
@@ -6,17 +6,19 @@
   </header>
   <nav id="nav" class="col-lg-12 nav">
     <ul>
-      <li><a routerLink="home" >Home</a></li>
-      <li><a routerLink="" >Productos</a></li>
-      <li><a routerLink="" >Crear producto</a></li>
+      <li><a routerLink="home" [routerLinkActive]="['activate']" >Home</a></li>
+      <li><a routerLink="Products" [routerLinkActive]="['activate']">Productos</a></li>
+      <li><a routerLink="create-Products" [routerLinkActive]="['activate']" >Crear producto</a></li>
     </ul>
   </nav>
   <section id="main" class="col-lg-12">
    <router-outlet></router-outlet> 
   
-  </section>
-  <footer class="col-lg-12">
-    <p>Curso de angular</p>
-  </footer>
+ 
+
+</section>
+<footer id="footer" class="col-lg-10 offset-lg-1">
+  <p>Curso de angular</p>
+</footer>
 
 </div>

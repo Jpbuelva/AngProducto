@@ -1,1 +1,32 @@
-<p>product-list works!</p>
+<h3>{{title}}</h3>
+
+<div *ngIf ="!productos">
+    Cargando listado de productos...
+
+</div>
+<div *ngIf ="productos">
+
+    <div class="row">
+        <div class="col-lg-3" *ngFor="let producto of productos">
+            <div class="img-thumbnail" >
+                <div *ngIf="producto.imagen" class="image_container">
+                    <img class="product_image" src="http://localhost/curso-angular4-backend/uploads/{{producto.imagen}}" >
+                </div>
+                <div *ngIf="!producto.imagen" >
+                    <div class="img-relleno">
+
+                    </div>
+                </div>
+               
+           
+            <h3> {{producto.nombre}}</h3>  
+            <h6> $ {{producto.precio}}</h6>  
+            <p>
+                <a [routerLink]="['/detail-Products',producto.id]"  class="btn btn-sm btn-primary  mr-1"><i class="fas fa-align-justify"></i></a>
+                <a [routerLink]="['/edit-Products',producto.id]"  class="btn btn-sm btn-info  mr-1"><i class="fas fa-edit"></i></a>
+                <a  (click)="onDeleteProduct(producto.id)" class="btn btn-sm btn-danger"><i class="fas fa-trash-alt"></i></a> 
+            </p>
+        </div>
+        </div>
+    </div>
+</div>
